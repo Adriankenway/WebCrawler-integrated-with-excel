@@ -15,6 +15,7 @@ except:
 	#se nao conseguir sai do programa e printa uma mensagem de erro
 	print("falha na requisicao")
 	exit()
+#esse bloco define as opcoes do usuario
 print("Oque deseja procurar:")
 print("1.Emails\n2.Imagens/Videos")
 opcoes = str(input())
@@ -48,7 +49,22 @@ if (opcoes == "1"):
 	#se o retorno for "False" e printado a mensagem:"Padrao nao encontrado"
 	else:
 		print("Padrao nao encontrado")
+
 else:
+	#lista que tera o link das imagens
+	imagensL = []
+	#lista que tera o link dos videos
+	videosL = []
+	#lista qu tera o link do iframe
+	iframesL = []
+	#a variavel soup recebe o site
 	soup = BeautifulSoup(site.text, 'html.parser')
-	for link in soup.find_all('img'):
-		print(link.get('src'))
+	#esse bloco pega o atributo "src" da tag "img"
+	for linkImage in soup.find_all('img'):
+		imagensL.append(linkImage.get('src'))
+	#esse bloco pega o atributo "src" da tag "video"
+	for linkVideo in soup.find_all('video'):
+		videosL.append(linkVideo.get('src'))
+	#esse bloco pega o atributo "src" da tag "iframe"
+	for linkIframe in soup.find_all('iframe'):
+		iframesL.append(linkIframe.get('src'))
