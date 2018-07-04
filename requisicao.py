@@ -68,3 +68,21 @@ else:
 	#esse bloco pega o atributo "src" da tag "iframe"
 	for linkIframe in soup.find_all('iframe'):
 		iframesL.append(linkIframe.get('src'))
+	print("Ver:")
+	print("1.Imagens\n2.Videos\n3.Tudo")
+	opcoes = str(input())
+	if (opcoes == "1"):
+		for links in imagensL:
+			print(links)
+	elif (opcoes == "2"):
+		for links in videosL:
+			print(links)
+		for links in iframesL:
+			print(links)
+	elif (opcoes == "3"):
+		for links in imagensL:
+			print(links)
+		for links in videosL:
+			print(links)
+		for links in iframesL:
+			print(links)
