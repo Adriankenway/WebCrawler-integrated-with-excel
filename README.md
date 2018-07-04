@@ -29,6 +29,22 @@ Executando o programa de WebCrawler:
 - Faça download do arquivo
 - Execute o arquivo requisicao.py 
 
+Requirements:
+- python3.5 interpreter
+- Library requests
+- Library xlwt
+
+How to install Libraries:
+Go to the Promtpt (Windows) or terminal (linux / mac) and type:
+
+pip install requests
+
+pip install xlwt
+
+Running the WebCrawler program:
+- Download file
+- Execute the file requisicao.py
+
 
 
 By: Adriano silva
