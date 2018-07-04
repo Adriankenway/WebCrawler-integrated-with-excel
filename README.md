@@ -11,13 +11,6 @@ Requisitos:
 - Biblioteca requests
 - Biblioteca xlwt
 
-
-
-Como intalar Interpretador:
-Baixe de:
-- Execute o arquivo
-- Vá clicando em "next" até o final da instalação
-
 Como instalar Bibliotecas:
 Vá ao Promtpt(Windows) ou terminal(linux/mac) e digite:
 
